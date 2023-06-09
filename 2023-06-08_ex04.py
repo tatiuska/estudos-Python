@@ -6,4 +6,4 @@ alunos = {"João": 8, "Maria": 9, "Pedro": 7}
 media = 0
 for nota in alunos.values():
     media = media + nota / 3
-print(media)
+print(f"{media:.2f}")
