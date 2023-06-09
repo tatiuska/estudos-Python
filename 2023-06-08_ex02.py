@@ -6,3 +6,7 @@
 estoque = {"Camisetas": 10, "Calças": 5, "Sapatos": 2}
 for item, quantidade in estoque.items():
     print(f"{item} - {quantidade}")
+for item in estoque.keys():
+    print(f"{item}")
+for quantidade in estoque.values():
+    print(f"{quantidade}")
