@@ -6,4 +6,4 @@
 estoque = {"camisetas": 20, "calcas": 15, "sapatos": 10}
 for item, qtd in estoque.items():
     if qtd <= 10:
-        print(f"{item}");
+        print(f"{item}")
