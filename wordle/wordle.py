@@ -13,7 +13,15 @@ class Wordle:
 
     def guess(self, word: str):
         result = []
-        return []
+
+        for i in range(self.WORD_LENGTH):
+            character = word[i]
+            letter = LetterState(character)
+            letter.is_in_word = character in self.secret
+            letter.is_in_position = character == self.secret[i]
+            result.append(letter)
+
+        return result
 
     @property
     def is_solved(self):
