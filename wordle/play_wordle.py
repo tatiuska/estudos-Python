@@ -7,6 +7,8 @@ def main():
     while wordle.can_attempt:
         word = input("Type your guess: ")
         wordle.attempt(word)
+        result = wordle.guess(word)
+        print(result)
 
     if wordle.is_solved:
         print("You've solved the puzzle!")
