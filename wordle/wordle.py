@@ -1,3 +1,4 @@
+from letter_state import LetterState
 class Wordle:
 
     MAX_ATTEMPTS = 6
