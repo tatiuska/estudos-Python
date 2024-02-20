@@ -6,10 +6,13 @@ class Wordle:
     def __init__(self, secret: str):
         self.secret: str = secret
         self.attempts = []
-        pass
 
     def attempt(self, word: str):
         self.attempts.append(word)
+
+    def guess(self, word: str):
+        result = []
+        return []
 
     @property
     def is_solved(self):
