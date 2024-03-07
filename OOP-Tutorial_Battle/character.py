@@ -1,6 +1,7 @@
 # Character class
-from weapon import fists
+from weapon import fists, Weapon
 from health_bar import HealthBar
+
 
 class Character:
     # Class-level variables
@@ -44,7 +45,7 @@ class Hero(Character):
 
 
 class Enemy(Character):
-    def __init__(self, name: str, health: int, weapon) -> None:
+    def __init__(self, name: str, health: int, weapon: Weapon) -> None:
         super().__init__(name=name, health=health)
         self.weapon = weapon
 

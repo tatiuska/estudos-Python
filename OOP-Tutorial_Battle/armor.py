@@ -9,6 +9,6 @@ class Armor:
     def equip(self, weapon: Weapon) -> int:
         return self.defense - weapon.damage
 
-        
+
 
 # métodos: equipar, dropar e defender
